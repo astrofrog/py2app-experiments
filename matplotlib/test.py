@@ -1,7 +1,9 @@
 import matplotlib
+matplotlib.use('MacOSX')
 import matplotlib.pyplot as plt
 
 fig = plt.figure()
 fig.text(0.5, 0.5, matplotlib.__path__, ha='center')
 fig.show() 
-#fig.canvas.start_event_loop(10)
+
+fig.canvas.start_event_loop(3600)
